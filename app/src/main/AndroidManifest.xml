@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:name=".applicacion.Aplicacion"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_icono_app2_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AplicacionProyectoFinal"
+        tools:targetApi="33">
+        <activity
+            android:name=".batalla.Batalla"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".minijuego01.EnigmaDeLaForja"
+            android:exported="true"
+            android:screenOrientation="landscape">
+
+    </activity>
+        <activity
+            android:name=".intro.Intro"
+            android:exported="true"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".menu.Menu"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ajustes.Ajustes"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".historia.Historia"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".mundo.Mundo"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".tienda.Tienda"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".minijuego02.EnigmaEntrecruzado"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".minijuego03.CodigoEnigmatico"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".creditos.Creditos"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+    </application>
+
+</manifest>

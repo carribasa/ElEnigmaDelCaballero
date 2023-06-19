@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "405707764691",
+    "project_id": "el-enigma-del-caballero-a44f3",
+    "storage_bucket": "el-enigma-del-caballero-a44f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405707764691:android:b37c5e814e6ce63a167526",
+        "android_client_info": {
+          "package_name": "com.example.aplicacionproyectofinal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS3gUKXa2fQA_pzVx7IIIbHkAmfPS41wo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

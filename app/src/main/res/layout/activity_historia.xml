@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#000000"
+    tools:context=".historia.Historia">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/his_fondo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/his_estrellas1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/his_bocadillo"
+        android:layout_width="571dp"
+        android:layout_height="121dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.817"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937"
+        app:srcCompat="@drawable/his_bocadillo" />
+
+    <ImageView
+        android:id="@+id/his_flechapost"
+        android:layout_width="62dp"
+        android:layout_height="50dp"
+        android:clickable="false"
+        android:onClick="cambiarTextoEImagen"
+        app:layout_constraintBottom_toBottomOf="@+id/his_bocadillo"
+        app:layout_constraintEnd_toEndOf="@+id/his_bocadillo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/his_bocadillo"
+        app:layout_constraintTop_toTopOf="@+id/his_bocadillo"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/obj_flechapost" />
+
+    <ImageView
+        android:id="@+id/his_imgIcono"
+        android:layout_width="254dp"
+        android:layout_height="302dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/his_fondo"
+        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175"
+        app:srcCompat="@drawable/intro_logo" />
+
+    <ImageView
+        android:id="@+id/his_img1"
+        android:layout_width="496dp"
+        android:layout_height="222dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/his_caballero1"
+        android:layout_width="119dp"
+        android:layout_height="188dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/his_img1"
+        app:layout_constraintEnd_toEndOf="@+id/his_img1"
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toStartOf="@+id/his_img1"
+        app:layout_constraintTop_toTopOf="@+id/his_img1"
+        app:layout_constraintVertical_bias="0.611"
+        app:srcCompat="@drawable/his_caballero1" />
+
+    <TextView
+        android:id="@+id/his_texto"
+        android:layout_width="494dp"
+        android:layout_height="85dp"
+        android:enabled="false"
+        android:fontFamily="@font/sinistre"
+        android:tag="parte1"
+        android:text="Hola, soy Eugin, te guiaré a lo largo de esta mágica historia del &quot;Enigma del Caballero&quot;"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/his_bocadillo"
+        app:layout_constraintEnd_toEndOf="@+id/his_bocadillo"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="@+id/his_bocadillo"
+        app:layout_constraintTop_toTopOf="@+id/his_bocadillo"
+        app:layout_constraintVertical_bias="0.527" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/his_teller"
+        android:layout_width="168dp"
+        android:layout_height="216dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/his_storyteller"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

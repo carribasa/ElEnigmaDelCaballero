@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bat_consLayo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bat_background"
+    tools:context=".batalla.Batalla">
+
+    <ImageView
+        android:id="@+id/bat_btnMenuBat"
+        android:layout_width="57dp"
+        android:layout_height="38dp"
+        android:contentDescription="@string/todo"
+        android:onClick="mostrarMenuPausa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045"
+        app:srcCompat="@drawable/boton_menu_flotante" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/bat_player_gif"
+        android:layout_width="150dp"
+        android:layout_height="125dp"
+        android:adjustViewBounds="false"
+        android:scaleX="0.95"
+        android:scaleY="1.04"
+        android:src="@drawable/bat_guerrero01_ataque"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/bat_layoutInfoJugador"
+        android:layout_width="151dp"
+        android:layout_height="90dp"
+        android:background="@drawable/bat_fondo_layout_info"
+        android:backgroundTintMode="screen"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+        <TextView
+            android:id="@+id/bat_textNombrePlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:foregroundGravity="center"
+            android:text="TODO"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+        <ProgressBar
+            android:id="@+id/bat_progressBarHPPlayer"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="120dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="14dp"
+            android:max="100"
+            android:progress="50"
+            android:progressTint="#6ADC39" />
+        <TextView
+            android:id="@+id/bat_textProgressPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PS 50/100"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <LinearLayout
+            android:id="@+id/bat_linearLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:orientation="horizontal"
+            tools:ignore="TextSizeCheck">
+
+            <ImageView
+                android:id="@+id/bat_imageView01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/bat_iconoespada"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <TextView
+                android:id="@+id/bat_ataquePersonaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10+6"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/bat_imageView02"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/bat_iconoescudo"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/bat_defensaPersonaje"
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10+6"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+    </LinearLayout>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/bat_troll_gif"
+        android:layout_width="221dp"
+        android:layout_height="215dp"
+        android:adjustViewBounds="true"
+        android:scaleX="0.95"
+        android:scaleY="1.1"
+        android:src="@drawable/bat_troll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.196"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/bat_layoutInfoMonstruo"
+        android:layout_width="151dp"
+        android:layout_height="90dp"
+        android:background="@drawable/bat_fondo_layout_info"
+        android:backgroundTintMode="screen"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+        <TextView
+            android:id="@+id/bat_textNombreMonstruo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:foregroundGravity="center"
+            android:text="TODO"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+        <ProgressBar
+            android:id="@+id/bat_progressBarHPMonstruo"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="120dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="14dp"
+            android:max="100"
+            android:progress="50"
+            android:progressTint="#6ADC39" />
+        <TextView
+            android:id="@+id/bat_textProgressMonstruo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="50/100"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.809"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:id="@+id/bat_linearLayout02"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:orientation="horizontal"
+            tools:ignore="TextSizeCheck">
+
+            <ImageView
+                android:id="@+id/bat_imageView03"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/bat_iconoespada"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/bat_ataqueMonstruo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="99"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/bat_imageView04"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/bat_iconoescudo"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/bat_defensaMonstruo"
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="99"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/bat_dado01IzqGif"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/todo"
+        android:onClick="tiradaDadoIzq"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bat_dado_gif01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.867"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/bat_dado01Izq"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:tag="dadoIzq"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.867"
+        app:srcCompat="@drawable/bat_dado06" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/bat_dado02DerGif"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/todo"
+        android:onClick="tiradaDadoDer"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bat_dado_gif02"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/bat_dado02Der"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:tag="dadoDer"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87"
+        app:srcCompat="@drawable/bat_dado06" />
+
+    <LinearLayout
+        android:id="@+id/bat_linearLayout05"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bat_cuadrado_poc"
+        android:clickable="false"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81">
+
+        <ImageView
+            android:id="@+id/bat_pocionPersonaje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="TODO"
+            android:onClick="usoPocion"
+            app:srcCompat="@drawable/obj_pocion01"
+            tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bat_imagenCartel"
+        android:layout_width="290dp"
+        android:layout_height="30dp"
+        android:scaleX="2.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tien_cartel"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/bat_textoCartel"
+        android:layout_width="267dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/sinistre"
+        android:gravity="center"
+        android:text="JUGADOR: TURNO 1"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bat_imagenCartel"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="354dp"
+        android:layout_height="170dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358">
+
+        <ImageView
+            android:id="@+id/bat_carta01"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:contentDescription="@string/todo"
+            android:onClick="eleccionCarta"
+            android:scaleX="0.97"
+            android:scaleY="0.97"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.005"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/bat_carta_esp01"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/bat_dado_carta01"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.215"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.823"
+            app:srcCompat="@android:drawable/screen_background_light"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/bat_carta02"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:onClick="eleccionCarta"
+            android:scaleX="0.97"
+            android:scaleY="0.97"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/bat_carta_esc01"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/bat_dado_carta02"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.574"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.821"
+            app:srcCompat="@android:drawable/screen_background_light"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/bat_carta03"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:onClick="eleccionCarta"
+            android:scaleX="0.97"
+            android:scaleY="0.97"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/bat_carta_cura01"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/bat_dado_carta03"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.938"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.821"
+            app:srcCompat="@android:drawable/screen_background_light"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imagenPausaBatalla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/batalla_bg_pausa"
+        tools:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearPausa"
+        android:layout_width="171dp"
+        android:layout_height="244dp"
+        android:background="@drawable/menu_fondo"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        tools:visibility="gone">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="251dp" />
+
+        <ImageView
+            android:id="@+id/menu_imV01"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/pausa_banner" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <ImageView
+            android:id="@+id/menu_imV03"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="ocultarMenuPausa"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/menu_btcontinuar" />
+
+        <ImageView
+            android:id="@+id/menu_imV04"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="mostrarTutorial"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/btn_tutorial" />
+
+        <ImageView
+            android:id="@+id/menu_imV06"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="irAjustes"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/menu_btajustes" />
+
+        <ImageView
+            android:id="@+id/menu_imV05"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="irAtras"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/btn_salir" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearTutorial"
+        android:layout_width="600dp"
+        android:layout_height="352dp"
+        android:background="@drawable/tutorial_pergamino"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvTituloTutorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sinistre"
+            android:text="+ TUTORIAL +"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTextoTutorial"
+            android:layout_width="489dp"
+            android:layout_height="182dp"
+            android:fontFamily="@font/sinistre"
+            android:shadowColor="#000000"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+
+        <ImageView
+            android:id="@+id/ivAceptar"
+            android:layout_width="109dp"
+            android:layout_height="35dp"
+            android:onClick="ocultarTutorial"
+            app:srcCompat="@drawable/btn_aceptar" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/confetti"
+        android:layout_width="781dp"
+        android:layout_height="385dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/confetti"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.213"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textoGanador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sinistre"
+        android:text="¡¡Has Ganado!!"
+        android:textColor="#FDFDFD"
+        android:textSize="60sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/linearResultado"
+        android:layout_width="260dp"
+        android:layout_height="120dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/bat_resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/fondoInicio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/mundo_layout_knight" />
+
+        <ImageView
+            android:id="@+id/ee_cerrar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="223dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:onClick="irAtras"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ee_monedasganadas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/sinistre"
+                    android:inputType="textPersonName"
+                    android:text="Monedas Ganadas:"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ee_mongan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sinistre"
+                    android:text="$"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ee_saldoanterior"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/sinistre"
+                    android:inputType="textPersonName"
+                    android:text="Saldo anterior:"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ee_monant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sinistre"
+                    android:text="$"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ee_saldoactual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/sinistre"
+                    android:inputType="textPersonName"
+                    android:text="Saldo Actual:"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ee_monact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="@font/sinistre"
+                    android:text="$"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/fondoInicio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="2"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/intro_bg"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/bat_icono"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142"
+        app:srcCompat="@drawable/bat_icono"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/bat_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:fontFamily="@font/sinistre"
+        android:text="Batalla"
+        android:textColor="#FDFDFD"
+        android:textSize="60sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/fondoInicio"
+        app:layout_constraintEnd_toEndOf="@+id/fondoInicio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

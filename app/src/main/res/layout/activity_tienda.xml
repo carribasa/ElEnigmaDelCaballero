@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tien_consLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tienda.Tienda">
+
+
+    <ImageView
+        android:id="@+id/tien_fondo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="TODO"
+        android:scaleType="fitXY"
+        android:src="@drawable/tien_backshop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/tien_seller"
+        android:layout_width="658dp"
+        android:layout_height="378dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/tien_vendedor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/tien_relaLayout01"
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="-385dp"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/tien_fondoEsp01"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/tien_fondo_obj" />
+
+        <ImageView
+            android:id="@+id/tien_espada01"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="11dp"
+            android:background="@drawable/obj_espada_mad"
+            android:onClick="infoEspada1"
+            android:tag="espada_madera" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tien_relaLayout02"
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="-275dp"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/tien_fondoEsp02"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/tien_fondo_obj" />
+
+        <ImageView
+            android:id="@+id/tien_espada02"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="infoEspada2"
+            app:srcCompat="@drawable/obj_daga" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tien_relaLayout03"
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="-333dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/tien_fondoEsp03"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/tien_fondo_obj" />
+
+        <ImageView
+            android:id="@+id/tien_espada03"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="infoEspada3"
+            app:srcCompat="@drawable/obj_espada_buena" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tien_relaLayout04"
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/tien_fondoEsc01"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/tien_fondo_obj" />
+
+        <ImageView
+            android:id="@+id/tien_escudo01"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/obj_escudo_madera"
+            android:onClick="infoEscudo1"
+            android:tag="escudo_madera" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tien_relaLayout05"
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="380dp"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/tien_fondoEsc02"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/tien_fondo_obj" />
+
+        <ImageView
+            android:id="@+id/tien_escudo02"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="11dp"
+            android:onClick="infoEscudo2"
+            app:srcCompat="@drawable/obj_escudo_semi" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tien_relaLayout06"
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="323dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/tien_fondoEsc03"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/tien_fondo_obj" />
+
+        <ImageView
+            android:id="@+id/tien_escudo03"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="infoEscudo3"
+            app:srcCompat="@drawable/obj_escudo_bueno" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tien_linLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="-12dp"
+        android:layout_marginBottom="200dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/tien_relaLayout07"
+            android:layout_width="45dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/tien_fondoPoc01"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tien_fondo_obj" />
+
+            <ImageView
+                android:id="@+id/tien_pocion01"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/obj_pocion01"
+                android:onClick="infoPocion1" />
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/tien_relaLayout08"
+            android:layout_width="45dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/tien_fondoPoc02"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tien_fondo_obj" />
+
+            <ImageView
+                android:id="@+id/tien_pocion02"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/obj_pocion02"
+                android:onClick="infoPocion2" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tien_relaLayout09"
+        android:layout_width="189dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="350dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tien_fondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/tien_imageV01"
+            android:layout_width="180dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/tien_cartel" />
+
+        <TextView
+            android:id="@+id/tien_texto"
+            android:layout_width="87dp"
+            android:layout_height="31dp"
+            android:layout_alignTop="@+id/tien_imageV01"
+            android:layout_alignEnd="@+id/tien_imageV01"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/sinistre"
+            android:text="Tienda"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tien_cartelPrecio01"
+        android:layout_width="25dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="-386dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/tien_cartel_precio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/tien_linLayout02"
+        android:layout_width="19dp"
+        android:layout_height="9dp"
+        android:layout_marginTop="-88dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tien_cartelPrecio01"
+        app:layout_constraintStart_toStartOf="@+id/tien_cartelPrecio01"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/tien_moneda01"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:background="@drawable/tien_moneda" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tien_textView01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="100"
+            android:textColor="#FBDF04"
+            android:textSize="6sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tien_cartelPrecio02"
+        android:layout_width="25dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="-277dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/tien_cartel_precio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/tien_linLayout03"
+        android:layout_width="20dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-88dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tien_cartelPrecio02"
+        app:layout_constraintStart_toStartOf="@+id/tien_cartelPrecio02"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/tien_moneda02"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:background="@drawable/tien_moneda" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tien_textView02"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="300"
+            android:textColor="#FBDF04"
+            android:textSize="6sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tien_cartelPrecio03"
+        android:layout_width="25dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="-334dp"
+        android:layout_marginBottom="-35dp"
+        android:background="@drawable/tien_cartel_precio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="19dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tien_cartelPrecio03"
+        app:layout_constraintStart_toStartOf="@id/tien_cartelPrecio03"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/tien_moneda03"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:background="@drawable/tien_moneda" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tien_textView03"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="600"
+            android:textColor="#FBDF04"
+            android:textSize="6sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tien_cartelPrecio04"
+        android:layout_width="25dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="-68dp"
+        android:layout_marginBottom="153dp"
+        android:background="@drawable/tien_cartel_precio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/tien_linLayout04"
+        android:layout_width="19dp"
+        android:layout_height="8dp"
+        android:layout_marginBottom="153dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tien_cartelPrecio04"
+        app:layout_constraintStart_toStartOf="@id/tien_cartelPrecio04"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/tien_moneda04"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:background="@drawable/tien_moneda" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tien_textView04"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="50"
+            android:textColor="#FBDF04"
+            android:textSize="6sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tien_cartelPrecio05"
+        android:layout_width="25dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="153dp"
+        android:background="@drawable/tien_cartel_precio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/tien_linLayout05"
+        android:layout_width="19dp"
+        android:layout_height="8dp"
+        android:layout_marginBottom="153dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tien_cartelPrecio05"
+        app:layout_constraintStart_toStartOf="@id/tien_cartelPrecio05"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/tien_moneda05"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:background="@drawable/tien_moneda" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tien_textView05"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="300"
+            android:textColor="#FBDF04"
+            android:textSize="6sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tien_cartelPrecio06"
+        android:layout_width="25dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/tien_cartel_precio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/tien_linLayout06"
+        android:layout_width="19dp"
+        android:layout_height="8dp"
+        android:layout_marginBottom="90dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tien_cartelPrecio06"
+        app:layout_constraintStart_toStartOf="@id/tien_cartelPrecio06"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/tien_moneda06"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:background="@drawable/tien_moneda" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tien_textView06"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="100"
+            android:textColor="#FBDF04"
+            android:textSize="6sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tien_cartelPrecio07"
+        android:layout_width="25dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="380dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/tien_cartel_precio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/tien_linLayout07"
+        android:layout_width="19dp"
+        android:layout_height="8dp"
+        android:layout_marginBottom="90dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tien_cartelPrecio07"
+        app:layout_constraintStart_toStartOf="@id/tien_cartelPrecio07"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/tien_moneda07"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:background="@drawable/tien_moneda" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tien_textView07"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="300"
+            android:textColor="#FBDF04"
+            android:textSize="6sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tien_cartelPrecio08"
+        android:layout_width="25dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="322dp"
+        android:layout_marginBottom="-35dp"
+        android:background="@drawable/tien_cartel_precio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/tien_linLayout08"
+        android:layout_width="19dp"
+        android:layout_height="8dp"
+        android:layout_marginBottom="-35dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tien_cartelPrecio08"
+        app:layout_constraintStart_toStartOf="@id/tien_cartelPrecio08"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/tien_moneda08"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:background="@drawable/tien_moneda" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tien_textView08"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="600"
+            android:textColor="#FBDF04"
+            android:textSize="6sp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tien_compra"
+        android:layout_width="220dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="220dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/tien_pergamino"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.718"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.302"
+            app:srcCompat="@drawable/tien_pergamino" />
+
+        <Button
+            android:id="@+id/tien_btn_comprar"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="94dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="11dp"
+            android:backgroundTint="#690F15"
+            android:onClick="confirmacionCompra"
+            android:text="COMPRAR"
+            android:textColor="@color/white"
+            android:textSize="7sp"
+            app:iconPadding="0dp" />
+
+        <ImageView
+            android:id="@+id/tien_btn_cerrar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="159dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginBottom="112dp"
+            android:onClick="cerrar"
+            app:srcCompat="@android:drawable/ic_delete"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:layout_width="187dp"
+            android:layout_height="99dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="187dp"
+                android:layout_height="99dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/tien_imgObjeto"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/obj_espada_mad" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tien_infoAtaque"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sinistre"
+                            android:text="Ataque:"
+                            android:textColor="#807373"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tien_infoAtaque2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sinistre"
+                            android:text="+ 2"
+                            android:textColor="#807373"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tien_infoPrecio"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sinistre"
+                            android:text="Precio:"
+                            android:textColor="#807373"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tien_infoPrecio2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sinistre"
+                            android:text="$"
+                            android:textColor="#807373"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tien_letrero"
+        android:layout_width="104dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="-8dp"
+        android:layout_marginBottom="40dp"
+        android:scaleY="0.8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.169"
+        app:srcCompat="@drawable/obj_letrero" />
+
+    <TextView
+        android:id="@+id/tien_pociones"
+        android:layout_width="113dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="395dp"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/sinistre"
+        android:text="TextView"
+        android:textColor="#807373"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="64dp"
+        android:layout_height="27dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/tien_letrero"
+        app:layout_constraintEnd_toEndOf="@+id/tien_letrero"
+        app:layout_constraintStart_toStartOf="@+id/tien_letrero"
+        app:layout_constraintTop_toTopOf="@+id/tien_letrero">
+
+        <ImageView
+            android:id="@+id/tien_mon_letrero"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/laberinto_moneda2" />
+
+        <TextView
+            android:id="@+id/tien_info_monedas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="$$$"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tien_atras"
+        android:layout_width="58dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="-10dp"
+        android:onClick="irAtras"
+        app:layout_constraintBottom_toBottomOf="@+id/tien_fondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036"
+        app:srcCompat="@drawable/boton_atras" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

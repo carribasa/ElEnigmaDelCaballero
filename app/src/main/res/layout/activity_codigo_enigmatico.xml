@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/code_background"
+    android:backgroundTint="#090909"
+    android:backgroundTintMode="add"
+    tools:context=".minijuego03.CodigoEnigmatico">
+
+    <ImageView
+        android:id="@+id/btnMenuJuego2"
+        android:layout_width="56dp"
+        android:layout_height="32dp"
+        android:onClick="mostrarMenuPausa"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012"
+        app:srcCompat="@drawable/boton_menu_flotante" />
+
+    <ImageView
+        android:id="@+id/code_cartel"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:scaleX="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tien_cartel"
+        android:animateLayoutChanges="true"
+        />
+
+    <ImageView
+        android:id="@+id/code_titulo"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/code_titulo" />
+
+    <TableLayout
+        android:id="@+id/code_taLayout01"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="720dp"
+        android:background="@drawable/code_cuad_gemas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/code_gema01"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+
+            <ImageView
+                android:id="@+id/code_gema02"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="9dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/code_gema03"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+
+            <ImageView
+                android:id="@+id/code_gema04"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/code_liLayout01"
+        android:layout_width="60dp"
+        android:layout_height="240dp"
+        android:layout_marginEnd="720dp"
+        android:background="@drawable/code_columna"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633">
+
+        <ImageView
+            android:id="@+id/code_imV01"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="code_imV01"
+            android:onClick="cambiarColor01"
+            android:scaleType="centerInside"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura01_black" />
+
+        <ImageView
+            android:id="@+id/code_imV02"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="code_imV02"
+            android:onClick="cambiarColor02"
+            android:scaleType="centerInside"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura02_black" />
+
+        <ImageView
+            android:id="@+id/code_imV03"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor03"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura03_black" />
+
+        <ImageView
+            android:id="@+id/code_imV04"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor04"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura04_black" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/code_botonOk01"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="720dp"
+        android:layout_marginBottom="6dp"
+        android:onClick="accionBoton01"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code_liLayout01"
+        app:layout_constraintVertical_bias="0.983"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+    <TableLayout
+        android:id="@+id/code_taLayout02"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/code_cuad_gemas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_taLayout01"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/code_gema11"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+
+            <ImageView
+                android:id="@+id/code_gema12"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="9dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/code_gema13"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+
+            <ImageView
+                android:id="@+id/code_gema14"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/code_liLayout02"
+        android:layout_width="60dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/code_columna"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_liLayout01"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633">
+
+        <ImageView
+            android:id="@+id/code_imV11"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:clickable="false"
+            android:onClick="cambiarColor11"
+            android:scaleType="centerInside"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura01_black"
+
+            />
+
+        <ImageView
+            android:id="@+id/code_imV12"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:clickable="false"
+            android:onClick="cambiarColor12"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura02_black" />
+
+        <ImageView
+            android:id="@+id/code_imV13"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:clickable="false"
+            android:onClick="cambiarColor13"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura03_black" />
+
+        <ImageView
+            android:id="@+id/code_imV14"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:clickable="false"
+            android:onClick="cambiarColor14"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura04_black" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/code_botonOk02"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:onClick="accionBoton02"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_botonOk01"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+    <TableLayout
+        android:id="@+id/code_taLayout03"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/code_cuad_gemas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_taLayout02"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/code_gema21"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+
+            <ImageView
+                android:id="@+id/code_gema22"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="9dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/code_gema23"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+
+            <ImageView
+                android:id="@+id/code_gema24"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/code_liLayout03"
+        android:layout_width="60dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/code_columna"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_liLayout02"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633">
+
+        <ImageView
+            android:id="@+id/code_imV21"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor21"
+            android:scaleType="centerInside"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura01_black" />
+
+        <ImageView
+            android:id="@+id/code_imV22"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor22"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura02_black" />
+
+        <ImageView
+            android:id="@+id/code_imV23"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor23"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura03_black" />
+
+        <ImageView
+            android:id="@+id/code_imV24"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor24"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura04_black" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/code_botonOk03"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:onClick="accionBoton03"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_botonOk02"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+    <TableLayout
+        android:id="@+id/code_taLayout04"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/code_cuad_gemas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_taLayout03"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/code_gema31"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+
+            <ImageView
+                android:id="@+id/code_gema32"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="9dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/code_gema33"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+
+            <ImageView
+                android:id="@+id/code_gema34"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/code_liLayout04"
+        android:layout_width="60dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/code_columna"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_liLayout03"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633">
+
+        <ImageView
+            android:id="@+id/code_imV31"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor31"
+            android:scaleType="centerInside"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura01_black" />
+
+        <ImageView
+            android:id="@+id/code_imV32"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor32"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura02_black" />
+
+        <ImageView
+            android:id="@+id/code_imV33"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor33"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura03_black" />
+
+        <ImageView
+            android:id="@+id/code_imV34"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor34"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura04_black" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/code_botonOk04"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:onClick="accionBoton04"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_botonOk03"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+    <TableLayout
+        android:id="@+id/code_taLayout05"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/code_cuad_gemas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_taLayout04"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/code_gema41"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+
+            <ImageView
+                android:id="@+id/code_gema42"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="9dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/code_gema43"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+
+            <ImageView
+                android:id="@+id/code_gema44"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/code_liLayout05"
+        android:layout_width="60dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/code_columna"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_liLayout04"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633">
+
+        <ImageView
+            android:id="@+id/code_imV41"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor41"
+            android:scaleType="centerInside"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura01_black" />
+
+        <ImageView
+            android:id="@+id/code_imV42"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor42"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura02_black" />
+
+        <ImageView
+            android:id="@+id/code_imV43"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor43"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura03_black" />
+
+        <ImageView
+            android:id="@+id/code_imV44"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor44"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura04_black" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/code_botonOk05"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:onClick="accionBoton05"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_botonOk04"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+    <TableLayout
+        android:id="@+id/code_taLayout06"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/code_cuad_gemas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_taLayout05"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/code_gema51"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+
+            <ImageView
+                android:id="@+id/code_gema52"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="9dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/code_gema53"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+
+            <ImageView
+                android:id="@+id/code_gema54"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/code_liLayout06"
+        android:layout_width="60dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/code_columna"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_liLayout05"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633">
+
+        <ImageView
+            android:id="@+id/code_imV51"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor51"
+            android:scaleType="centerInside"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura01_black" />
+
+        <ImageView
+            android:id="@+id/code_imV52"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor52"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura02_black" />
+
+        <ImageView
+            android:id="@+id/code_imV53"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor53"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura03_black" />
+
+        <ImageView
+            android:id="@+id/code_imV54"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor54"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura04_black" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/code_botonOk06"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:onClick="accionBoton06"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_botonOk05"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+    <TableLayout
+        android:id="@+id/code_taLayout07"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/code_cuad_gemas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_taLayout06"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/code_gema61"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+
+            <ImageView
+                android:id="@+id/code_gema62"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="9dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/code_gema63"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+
+            <ImageView
+                android:id="@+id/code_gema64"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/code_liLayout07"
+        android:layout_width="60dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/code_columna"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_liLayout06"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633">
+
+        <ImageView
+            android:id="@+id/code_imV61"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor61"
+            android:scaleType="centerInside"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura01_black" />
+
+        <ImageView
+            android:id="@+id/code_imV62"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor62"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura02_black" />
+
+        <ImageView
+            android:id="@+id/code_imV63"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor63"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura03_black" />
+
+        <ImageView
+            android:id="@+id/code_imV64"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor64"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura04_black" />
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/code_botonOk07"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:onClick="accionBoton07"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_botonOk06"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+    <TableLayout
+        android:id="@+id/code_taLayout08"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/code_cuad_gemas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_taLayout07"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/code_gema71"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+
+            <ImageView
+                android:id="@+id/code_gema72"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="9dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/code_gema73"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+
+            <ImageView
+                android:id="@+id/code_gema74"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/code_gema" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/code_liLayout08"
+        android:layout_width="60dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/code_columna"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_liLayout07"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633">
+
+        <ImageView
+            android:id="@+id/code_imV71"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor71"
+            android:scaleType="centerInside"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura01_black" />
+
+        <ImageView
+            android:id="@+id/code_imV72"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor72"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura02_black" />
+
+        <ImageView
+            android:id="@+id/code_imV73"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor73"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura03_black" />
+
+        <ImageView
+            android:id="@+id/code_imV74"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="cambiarColor74"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_figura04_black" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/code_botonOk08"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:onClick="accionBoton08"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_botonOk07"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+    <LinearLayout
+        android:id="@+id/code_liLayout09"
+        android:layout_width="60dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/code_columna"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code_liLayout08"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633">
+
+        <ImageView
+            android:id="@+id/code_imV81"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerInside"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_candado" />
+
+        <ImageView
+            android:id="@+id/code_imV82"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_candado" />
+
+        <ImageView
+            android:id="@+id/code_imV83"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_candado" />
+
+        <ImageView
+            android:id="@+id/code_imV84"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:tag="black"
+            app:srcCompat="@drawable/code_candado" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/code_taLayout08"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.118">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sinistre"
+            android:text="COLORES DISPONIBLES:"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/code_figura01_blue" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/code_figura01_green" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/code_figura01_pink" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/code_figura01_purple" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/code_figura01_red" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/code_figura01_yellow" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagenFondoPausa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/code_fondopausa"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearPausa"
+        android:layout_width="171dp"
+        android:layout_height="244dp"
+        android:background="@drawable/menu_fondo"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="251dp" />
+
+        <ImageView
+            android:id="@+id/menu_imV01"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/pausa_banner" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <ImageView
+            android:id="@+id/menu_imV03"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="ocultarMenuPausa"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/menu_btcontinuar" />
+
+        <ImageView
+            android:id="@+id/menu_imV04"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="mostrarTutorial"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/btn_tutorial" />
+
+        <ImageView
+            android:id="@+id/menu_imV06"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="irAjustes"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/menu_btajustes" />
+
+        <ImageView
+            android:id="@+id/menu_imV05"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="irAtras"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/btn_salir" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearTutorial"
+        android:layout_width="589dp"
+        android:layout_height="350dp"
+        android:background="@drawable/tutorial_pergamino"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvTituloTutorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sinistre"
+            android:text="+ TUTORIAL +"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTextoTutorial"
+            android:layout_width="492dp"
+            android:layout_height="180dp"
+            android:fontFamily="@font/sinistre"
+            android:shadowColor="#000000"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+
+        <ImageView
+            android:id="@+id/ivAceptar"
+            android:layout_width="109dp"
+            android:layout_height="35dp"
+            android:onClick="ocultarTutorial"
+            app:srcCompat="@drawable/btn_aceptar" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+    </LinearLayout>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/confetti"
+        android:layout_width="781dp"
+        android:layout_height="385dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/confetti"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.213"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textoGanador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sinistre"
+        android:text="¡¡Has Ganado!!"
+        android:textColor="#FDFDFD"
+        android:textSize="60sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/code_pruebaImagen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/intro_bg" />
+
+    <ImageView
+        android:id="@+id/code_icono"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142"
+        app:srcCompat="@drawable/code_icono" />
+
+    <ImageView
+        android:id="@+id/code_titulo_grande"
+        android:layout_width="639dp"
+        android:layout_height="94dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.882"
+        app:srcCompat="@drawable/code_titulo" />
+
+    <FrameLayout
+        android:id="@+id/linearResultado"
+        android:layout_width="260dp"
+        android:layout_height="120dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ee_resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/fondoInicio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/mundo_layout_knight" />
+
+        <ImageView
+            android:id="@+id/ee_cerrar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="223dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:onClick="cerrar"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ee_monedasganadas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/sinistre"
+                    android:inputType="textPersonName"
+                    android:text="Monedas Ganadas:"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ee_mongan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sinistre"
+                    android:text="$"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ee_saldoanterior"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/sinistre"
+                    android:inputType="textPersonName"
+                    android:text="Saldo anterior:"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ee_monant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sinistre"
+                    android:text="$"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ee_saldoactual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/sinistre"
+                    android:inputType="textPersonName"
+                    android:text="Saldo Actual:"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ee_monact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="@font/sinistre"
+                    android:text="$"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

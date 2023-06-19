@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_consLayo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background"
+    android:backgroundTintMode="add"
+    tools:context=".menu.Menu">
+
+    <LinearLayout
+        android:id="@+id/layout_login"
+        android:layout_width="140dp"
+        android:layout_height="181dp"
+        android:background="@drawable/menu_fondo"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.396">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <ImageView
+            android:id="@+id/banner_login"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/menu_banner" />
+
+        <EditText
+            android:id="@+id/etNombre_login"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="7"
+            android:hint="Nombre del heroe"
+            android:inputType="textPersonName"
+            android:maxLength="7"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHint="#736F6F"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etContrasenya_login"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="7"
+            android:foregroundGravity="center_vertical"
+            android:hint="Contraseña"
+            android:inputType="textPersonName"
+            android:maxLength="7"
+            android:password="true"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHint="#736F6F"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/btnNuevaPartida_login"
+            android:layout_width="92dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:onClick="comenzarPartida"
+            app:srcCompat="@drawable/btnentrar" />
+
+        <ImageView
+            android:id="@+id/btnAtras_login"
+            android:layout_width="92dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:onClick="btnAtras"
+            app:srcCompat="@drawable/menu_atras" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearPausa"
+        android:layout_width="179dp"
+        android:layout_height="215dp"
+        android:background="@drawable/menu_fondo"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <ImageView
+            android:id="@+id/menu_imV01"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/menu_banner" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <ImageView
+            android:id="@+id/menu_imV02"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="btnNuevaPartidaMenu"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/btnentrar" />
+
+        <ImageView
+            android:id="@+id/menu_imV04"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="pasarPagina_MenuAjustes"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/menu_btajustes" />
+
+        <ImageView
+            android:id="@+id/menu_imV05"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="pasarPagina_MenuCreditos"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/menu_btcreditos" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

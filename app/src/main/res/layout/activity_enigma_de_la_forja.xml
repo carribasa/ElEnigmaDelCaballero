@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_escenario_forja"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forja_bg"
+    tools:context=".minijuego01.EnigmaDeLaForja"
+    tools:visibility="visible">
+
+    <TableLayout
+        android:id="@+id/tableLayoutForja"
+        android:layout_width="235dp"
+        android:layout_height="126dp"
+        android:background="@drawable/forja_fondopuntuacion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.314">
+
+        <TableRow
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <Space
+                android:layout_width="80dp"
+                android:layout_height="10dp" />
+
+            <Space
+                android:layout_width="80dp"
+                android:layout_height="10dp" />
+
+            <Space
+                android:layout_width="80dp"
+                android:layout_height="10dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/forja_hacha01"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/forja_hacha_negro" />
+
+            <ImageView
+                android:id="@+id/forja_martillo"
+                android:layout_width="63dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/forja_martillo_negro" />
+
+            <ImageView
+                android:id="@+id/forja_arco"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/forja_arco_negro" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <Space
+                android:layout_width="80dp"
+                android:layout_height="10dp" />
+
+            <Space
+                android:layout_width="80dp"
+                android:layout_height="10dp" />
+
+            <Space
+                android:layout_width="80dp"
+                android:layout_height="10dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="187dp"
+            android:layout_height="49dp">
+
+            <ImageView
+                android:id="@+id/forja_colgante"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/forja_colgante_negro" />
+
+            <ImageView
+                android:id="@+id/forja_armadura"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/forja_torso_negro" />
+
+            <ImageView
+                android:id="@+id/forja_hacha02"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/forja_hacha2_negro" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/ivMaterial2"
+        android:layout_width="145dp"
+        android:layout_height="136dp"
+        android:src="@drawable/forja_material2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.751"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivTitulo"
+        app:layout_constraintVertical_bias="0.238"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivFondoCuentaAtras"
+        android:layout_width="783dp"
+        android:layout_height="393dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@drawable/forja_bg_pausa"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/fondoPuntuacion1"
+        android:layout_width="63dp"
+        android:layout_height="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769"
+        app:srcCompat="@drawable/forja_fondopuntuacion" />
+
+    <ImageView
+        android:id="@+id/fondoPuntuacion2"
+        android:layout_width="63dp"
+        android:layout_height="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769"
+        app:srcCompat="@drawable/forja_fondopuntuacion" />
+
+    <ImageView
+        android:id="@+id/fondoPuntuacion3"
+        android:layout_width="63dp"
+        android:layout_height="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.649"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769"
+        app:srcCompat="@drawable/forja_fondopuntuacion" />
+
+    <ImageView
+        android:id="@+id/ivFondoTiempo"
+        android:layout_width="75dp"
+        android:layout_height="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivTitulo"
+        app:layout_constraintVertical_bias="0.567"
+        app:srcCompat="@drawable/obj_letrero" />
+
+    <ImageView
+        android:id="@+id/ivMesa"
+        android:layout_width="364dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="280dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivTitulo"
+        app:srcCompat="@drawable/forja_mesa" />
+
+    <ImageView
+        android:id="@+id/ivMaterial1"
+        android:layout_width="145dp"
+        android:layout_height="137dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238"
+        app:srcCompat="@drawable/forja_material1" />
+
+    <ImageView
+        android:id="@+id/btnMenuJuego"
+        android:layout_width="57dp"
+        android:layout_height="38dp"
+        android:onClick="mostrarMenuPausa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045"
+        app:srcCompat="@drawable/boton_menu_flotante" />
+
+    <TextView
+        android:id="@+id/tvTiempo"
+        android:layout_width="57dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/sinistre"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <ImageView
+        android:id="@+id/ivTitulo"
+        android:layout_width="685dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002"
+        app:srcCompat="@drawable/forja_letrero" />
+
+    <ImageView
+        android:id="@+id/ivMetal"
+        android:layout_width="46dp"
+        android:layout_height="43dp"
+        android:src="@drawable/forja_acero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.902" />
+
+    <ImageView
+        android:id="@+id/ivMadera"
+        android:layout_width="67dp"
+        android:layout_height="59dp"
+        android:src="@drawable/forja_madera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivTitulo"
+        app:layout_constraintVertical_bias="0.918" />
+
+    <ImageView
+        android:id="@+id/ivInstrucciones"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:src="@drawable/forja_instrucciones"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.913" />
+
+    <TextView
+        android:id="@+id/udsInstrucciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sinistre"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.767" />
+
+    <TextView
+        android:id="@+id/udsMetal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sinistre"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.767" />
+
+    <TextView
+        android:id="@+id/udsMadera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sinistre"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.767" />
+
+    <ImageView
+        android:id="@+id/fondoPuntuacionFinal"
+        android:layout_width="62dp"
+        android:layout_height="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivTitulo"
+        app:layout_constraintVertical_bias="0.683"
+        app:srcCompat="@drawable/forja_estandarte" />
+
+    <TextView
+        android:id="@+id/tvPuntuacion"
+        android:layout_width="35dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/sinistre"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605" />
+
+    <ImageView
+        android:id="@+id/ivMaterial5"
+        android:layout_width="143dp"
+        android:layout_height="138dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241"
+        app:srcCompat="@drawable/ivmaterial5"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivMaterial4"
+        android:layout_width="147dp"
+        android:layout_height="138dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivFondoCuentaAtras"
+        app:layout_constraintVertical_bias="0.239"
+        app:srcCompat="@drawable/ivmaterial4"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivMaterial6"
+        android:layout_width="143dp"
+        android:layout_height="138dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.239"
+        app:srcCompat="@drawable/ivmaterial6"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivMaterial3"
+        android:layout_width="144dp"
+        android:layout_height="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.751"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivTitulo"
+        app:layout_constraintVertical_bias="0.238"
+        app:srcCompat="@drawable/forja_material3"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivFondoCuentaAtrasInicio"
+        android:layout_width="174dp"
+        android:layout_height="139dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFondoCuentaAtras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/obj_letrero"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvCuentaAtrasInicio"
+        android:layout_width="76dp"
+        android:layout_height="86dp"
+        android:fontFamily="@font/sinistre"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/imagenFondoPausa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/forja_bg_pausa"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/linearPausa"
+        android:layout_width="171dp"
+        android:layout_height="244dp"
+        android:background="@drawable/menu_fondo"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        tools:visibility="gone">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="251dp" />
+
+        <ImageView
+            android:id="@+id/menu_imV01"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/pausa_banner" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <ImageView
+            android:id="@+id/menu_imV03"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="ocultarMenuPausa"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/menu_btcontinuar" />
+
+        <ImageView
+            android:id="@+id/menu_imV04"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="mostrarTutorial"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/btn_tutorial" />
+
+        <ImageView
+            android:id="@+id/menu_imV06"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="irAjustes"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/menu_btajustes" />
+
+        <ImageView
+            android:id="@+id/menu_imV05"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="irAtras"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/btn_salir" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearTutorial"
+        android:layout_width="589dp"
+        android:layout_height="327dp"
+        android:background="@drawable/tutorial_pergamino"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvTituloTutorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sinistre"
+            android:text="+ TUTORIAL +"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvTextoTutorial"
+            android:layout_width="492dp"
+            android:layout_height="150dp"
+            android:fontFamily="@font/sinistre"
+            android:shadowColor="#000000"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+
+        <ImageView
+            android:id="@+id/ivAceptar"
+            android:layout_width="109dp"
+            android:layout_height="35dp"
+            android:onClick="ocultarTutorial"
+            app:srcCompat="@drawable/btn_aceptar" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textoGanador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sinistre"
+        android:text="¡¡Has Ganado!!"
+        android:textColor="#FDFDFD"
+        android:textSize="60sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/confetti"
+        android:layout_width="781dp"
+        android:layout_height="385dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/confetti"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.213"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/fondoInicioForja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/intro_bg"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iconoInicioForja"
+        android:layout_width="284dp"
+        android:layout_height="198dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205"
+        app:srcCompat="@drawable/mun_icono_forja"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/letrasInicioForja"
+        android:layout_width="610dp"
+        android:layout_height="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826"
+        app:srcCompat="@drawable/forja_letras_inicio"
+        tools:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/linearResultado"
+        android:layout_width="260dp"
+        android:layout_height="120dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ee_resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/fondoInicio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/mundo_layout_knight" />
+
+        <ImageView
+
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="223dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:onClick="irAtras"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ee_monedasganadas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/sinistre"
+                    android:inputType="textPersonName"
+                    android:text="Monedas Ganadas:"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ee_mongan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sinistre"
+                    android:text="$"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ee_saldoanterior"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/sinistre"
+                    android:inputType="textPersonName"
+                    android:text="Saldo anterior:"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ee_monant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sinistre"
+                    android:text="$"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ee_saldoactual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/sinistre"
+                    android:inputType="textPersonName"
+                    android:text="Saldo Actual:"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ee_monact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="@font/sinistre"
+                    android:text="$"
+                    android:textColor="#4C4949"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mun_layout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mundo_bg"
+    tools:context=".mundo.Mundo">
+
+    <TextView
+        android:id="@+id/mun_textEnigmaForja"
+        android:layout_width="91dp"
+        android:layout_height="36dp"
+        android:background="#020202"
+        android:backgroundTint="#000000"
+        android:text="5. ENIGMA DE \n LA FORJA"
+        android:textAlignment="center"
+        android:textColor="#FFFEFE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.743"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929" />
+
+    <ImageButton
+        android:id="@+id/mun_botonBatalla03"
+        android:layout_width="81dp"
+        android:layout_height="61dp"
+        android:background="@android:color/transparent"
+        android:onClick="pasarPagina_MundoBatalla"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bat_icono"
+        android:tag="3"
+        android:text="MINIBATALLA02"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
+
+    <ImageButton
+        android:id="@+id/mun_menuBoton"
+        android:layout_width="57dp"
+        android:layout_height="38dp"
+        android:background="@android:color/transparent"
+        android:onClick="mostrarMenuPausa"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069"
+        app:srcCompat="@drawable/boton_menu_flotante" />
+
+    <ImageButton
+        android:id="@+id/mun_botonTienda"
+        android:layout_width="85dp"
+        android:layout_height="71dp"
+        android:background="@android:color/transparent"
+        android:onClick="pasarPagina_MundoTienda"
+        android:scaleType="fitXY"
+        android:src="@drawable/mun_icono_tienda"
+        android:text="TIENDA"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728" />
+
+    <ImageButton
+        android:id="@+id/mun_botonCodEnig"
+        android:layout_width="68dp"
+        android:layout_height="64dp"
+        android:background="@android:color/transparent"
+        android:onClick="pasarPagina_MundoCodEnig"
+        android:scaleType="fitXY"
+        android:text="CODIGO ENIGMATICO"
+        android:textColor="#FFFFFFFF"
+        android:textSize="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.534"
+        app:srcCompat="@drawable/code_icono" />
+
+    <ImageButton
+        android:id="@+id/mun_botonBatalla01"
+        android:layout_width="81dp"
+        android:layout_height="61dp"
+        android:background="@android:color/transparent"
+        android:onClick="pasarPagina_MundoBatalla"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bat_icono"
+        android:tag="1"
+        android:text="MINIBATALLA01"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.906" />
+
+    <ImageButton
+        android:id="@+id/mun_botonBatalla02"
+        android:layout_width="81dp"
+        android:layout_height="61dp"
+        android:background="@android:color/transparent"
+        android:onClick="pasarPagina_MundoBatalla"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bat_icono"
+        android:tag="2"
+        android:text="MINIBATALLA02"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <TextView
+        android:id="@+id/mun_textTienda"
+        android:layout_width="84dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="69dp"
+        android:background="#020202"
+        android:backgroundTint="#000000"
+        android:text="TIENDA"
+        android:textAlignment="center"
+        android:textColor="#FFFEFE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mun_botonTienda"
+        app:layout_constraintStart_toStartOf="@+id/mun_botonTienda" />
+
+
+    <TextView
+        android:id="@+id/mun_textEnigEn"
+        android:layout_width="124dp"
+        android:layout_height="32dp"
+        android:background="#000000"
+        android:text="1. ENIGMA ENTRECRUZADO"
+        android:textAlignment="center"
+        android:textColor="#FFFEFE"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451" />
+
+    <TextView
+        android:id="@+id/mun_textCodEnig"
+        android:layout_width="121dp"
+        android:layout_height="37dp"
+        android:background="#020202"
+        android:backgroundTint="#000000"
+        android:text="3. CODIGO ENIGMATICO"
+        android:textAlignment="center"
+        android:textColor="#FFFEFE"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
+
+    <TextView
+        android:id="@+id/mun_textBatalla01"
+        android:layout_width="81dp"
+        android:layout_height="21dp"
+        android:background="#020202"
+        android:backgroundTint="#000000"
+        android:text="2. BATALLA"
+        android:textAlignment="center"
+        android:textColor="#FFFEFE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <TextView
+        android:id="@+id/mun_textBatalla02"
+        android:layout_width="81dp"
+        android:layout_height="21dp"
+        android:background="#020202"
+        android:backgroundTint="#000000"
+        android:text="4. BATALLA"
+        android:textAlignment="center"
+        android:textColor="#FFFEFE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.313" />
+
+    <TextView
+        android:id="@+id/mun_textBatalla03"
+        android:layout_width="81dp"
+        android:layout_height="21dp"
+        android:background="#020202"
+        android:backgroundTint="#000000"
+        android:text="6. FINAL"
+        android:textAlignment="center"
+        android:textColor="#FFFEFE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="221dp"
+        android:layout_height="39dp"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/mundo_layout_knight" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/menu_player"
+        android:layout_width="48dp"
+        android:layout_height="35dp"
+        android:adjustViewBounds="false"
+        android:scaleX="0.95"
+        android:scaleY="1.04"
+        android:src="@drawable/bat_guerrero01_ataque"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="29dp"
+        android:layout_height="25dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043"
+        app:srcCompat="@drawable/laberinto_moneda2" />
+
+    <TextView
+        android:id="@+id/mun_numMoneda"
+        android:layout_width="66dp"
+        android:layout_height="17dp"
+        android:fontFamily="@font/sinistre"
+        android:gravity="center"
+        android:text="0000
+"
+        android:textAlignment="center"
+        android:textColor="#373333"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/mun_nomHeroe"
+        android:layout_width="66dp"
+        android:layout_height="17dp"
+        android:fontFamily="@font/sinistre"
+        android:gravity="center"
+        android:text="JUGADOR"
+        android:textAlignment="center"
+        android:textColor="#373333"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <ImageButton
+        android:id="@+id/mun_botonEnigEnt"
+        android:layout_width="74dp"
+        android:layout_height="72dp"
+        android:background="@android:color/transparent"
+        android:onClick="pasarPagina_MundoEnigmaEntrecruzado"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283"
+        app:srcCompat="@drawable/ee_icono" />
+
+    <ImageButton
+        android:id="@+id/mun_botonEnigmaForja"
+        android:layout_width="74dp"
+        android:layout_height="72dp"
+        android:background="@android:color/transparent"
+        android:onClick="pasarPagina_MundoEnigmaDeLaForja"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808"
+        app:srcCompat="@drawable/mun_icono_forja" />
+
+
+    <ImageView
+        android:id="@+id/imagenFondoPausa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mundo_bg_pausa"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearPausaMundo"
+        android:layout_width="171dp"
+        android:layout_height="202dp"
+        android:background="@drawable/menu_fondo"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="251dp" />
+
+        <ImageView
+            android:id="@+id/menu_imV01"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/pausa_banner" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <ImageView
+            android:id="@+id/menu_imV03"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="ocultarMenuPausa"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/menu_btcontinuar" />
+
+        <ImageView
+            android:id="@+id/menu_imV06"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="irAjustes"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/menu_btajustes" />
+
+        <ImageView
+            android:id="@+id/menu_imV05"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="irAtras"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/btn_salir" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
